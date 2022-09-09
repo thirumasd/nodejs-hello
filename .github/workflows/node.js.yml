@@ -14,7 +14,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-   
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js
@@ -26,4 +25,14 @@ jobs:
       run: npm install
       
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+      run: docker build . --file Dockerfile --tag sdthiruma/nodejs-sample:v1
+    
+    - name: docker login
+      env:
+        DOCKER_USER:  ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+      run: |
+        docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
+ 
+    - name: push the docker image
+      run: docker push sdthiruma/nodejs-sample:v1
