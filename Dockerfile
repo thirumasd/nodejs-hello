@@ -1,7 +1,7 @@
 FROM node:18-slim
 
 # Create app directory
-WORKDIR /usr/app
+WORKDIR /usr/src/app
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
@@ -16,4 +16,4 @@ RUN npm install
 COPY . .
 
 EXPOSE 8080
-CMD [ "node", "server.js" ]
+CMD [ "npm", "start" ]
