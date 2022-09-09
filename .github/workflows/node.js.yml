@@ -24,3 +24,6 @@ jobs:
       
     - name: Install dependencies
       run: npm install
+      
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
