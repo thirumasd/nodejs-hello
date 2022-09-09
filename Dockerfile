@@ -1,7 +1,7 @@
 FROM node:18-slim
 
 # Create app directory
-WORKDIR /usr/index.js
+WORKDIR /index.js
 
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
