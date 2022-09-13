@@ -7,7 +7,7 @@
     "start": "node index.js"
   },  
   "scripts": {
-    "test": "jest"
+    "test": "nodejs-hello"
   },
   "repository": {
     "type": "git",
