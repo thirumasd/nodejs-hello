@@ -7,7 +7,7 @@
     "start": "node index.js"
   },  
   "scripts": {
-    "test": "nodejs-hello"
+    "test": "node index.js"
   },
   "repository": {
     "type": "git",
