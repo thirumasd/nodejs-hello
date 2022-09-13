@@ -5,11 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
-  },
-  {
+  },  
   "scripts": {
     "test": "jest"
-  }
   },
   "repository": {
     "type": "git",
