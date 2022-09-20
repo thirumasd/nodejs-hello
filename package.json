@@ -16,7 +16,7 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.4.3"
-  }
+  },
   "bugs": {
     "url": "https://github.com/johnpapa/node-hello/issues"
   },
